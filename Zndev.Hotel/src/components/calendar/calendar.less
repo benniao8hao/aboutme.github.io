@@ -1,0 +1,144 @@
+.calendar {
+    position: fixed;
+    width: 100%;    
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    height: 100%;
+    background: #fff;
+    color: #666; 
+    td {
+        text-align: center;
+        height: 40px;
+    }
+    .headerWrapper {
+        height: 50px;
+        line-height: 50px;
+//      position: relative;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: #fff;
+        .headerTip {
+            text-align: center;
+            line-height: 50px;
+        }
+        .comfire {
+            height: 25px;
+            line-height: 25px;
+            width: 60px;
+            color: #fff;
+            position: absolute;
+            right: 15px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            top: 12px;
+            background-color: #fd640a;
+            letter-spacing: 5px;
+        }
+    }
+    .dateZone {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        margin: auto;
+        background: #f4f3f8;
+        border-bottom: 1px solid #ddd;
+        color: #666;
+        box-shadow: #eae5e5 1px 1px 1px 1px;
+        td {
+            background: #f4f3f8;
+            width: 14.2%;
+        }
+        .colo {
+            color: #f51212;
+        }
+    }
+    .tbody {
+        margin-top: 100px;
+        td {
+            background: #fff;
+        }
+        .ny1 {
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .dateTable {
+            width: 99.4%;
+            margin: auto;
+            border-bottom: 1px solid #ddd;
+            td {
+                width: 14.2%;
+            }
+            td.jjr {
+                color: #f51212;
+                p {
+                    font-size: 12px;
+                    margin: 1px 0;
+                }
+            }
+            td.disabled {
+                color: #ccc;
+            }
+            td.zj {
+                color: #58a505;
+                background: #c7f596;
+            }
+            td.selected {
+                background: #00ff14;
+                color: #fff;
+                position: relative;
+                p {
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
+                .hover {
+                    font-size: 14px;
+                    display: inline-block;
+                    width: 60%;
+                    background: #FF3;
+                    color: red;
+                    text-align: center;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.calendar.room-state{
+    .headerTip{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .tbody .ny1{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .dateTable{
+        border-bottom-width: 10px;
+        td{
+            border-bottom: solid 1px #eee;
+            padding: 5px 0;
+            font-size: 14px;
+            p{
+                font-size: 12px;
+            }
+        }
+        tr:last-child{
+            td{
+                border-bottom-width: 0;
+            }
+        }
+    }
+}
